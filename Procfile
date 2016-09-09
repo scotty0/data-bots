@@ -1,1 +1,1 @@
-web: python B2C_bot.py
+web: gunicorn B2C_bot:app --log-file -
