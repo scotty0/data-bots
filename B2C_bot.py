@@ -6,7 +6,7 @@ import time as t
 import flask
 
 app =flask.Flask(__name__)
-@app.route("/")
+
 def index():
 	analytics.write_key = 'dOSuxwCL1Y7Bx0p9zAaX3njukQjjNBMw'
 	user_id_list = []
