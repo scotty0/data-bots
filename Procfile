@@ -1,1 +1,1 @@
-web: python B2C_bot.py
+bot: python B2C_bot.py
