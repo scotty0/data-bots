@@ -3,6 +3,7 @@ import random as r
 import string
 import datetime as d
 import time as t
+
 analytics.write_key = 'dOSuxwCL1Y7Bx0p9zAaX3njukQjjNBMw'
 user_id_list = []
 hours_weighted = {'00':100,'01':80,'02':65,'03':45,'04':15,'05':65,'06':105,'07':115,'08':135,'09':145,'10':145,'11':150,'12':165,'13':155,'14':155,'15':145,'16':145,'17':150,'18':150,'19':145,'20':140,'21':125,'22':120,'23':105}
