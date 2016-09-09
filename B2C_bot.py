@@ -50,6 +50,30 @@ while True:
 		    'name': fname +' '+lname,
 		    'source': 'Segment Bot',
 		},timestamp=tmstmp)
+		analytics.group(uid, ''.join(r.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for _ in range(8)), {
+  			'company': 'Segment',
+  			'industry': 'Costumer Data Platform'
+		})
+		analytics.page(uid, 'Product Catalog', 'Home', {
+  			'url': 'http://company.com'
+		},context={
+					'campaign':{
+					'name':'acquistion_email_bot_325967',
+					'source':'other',
+					'term':'',
+					'content':'C',
+					'medium':'email'
+					},
+					'hash':'',
+					'page':{
+						'path':'/category/product',
+						'referrer':'/category',
+						'search':'',
+						'title':'product title',
+						'url':'https://www.company.com/category/product'
+					},
+					'userAgent':"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+		})
 		t.sleep(r.randint(1,5))
 		user_id_list.append(uid)
 		skip = False
