@@ -52,7 +52,7 @@ while True:
 		},timestamp=tmstmp)
 		analytics.group(uid, ''.join(r.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for _ in range(8)), {
   			'company': 'Segment',
-  			'industry': 'Costumer Data Platform'
+  			'industry': 'Customer Data Platform'
 		})
 		analytics.page(uid, 'Product Catalog', 'Home', {
   			'url': 'http://company.com'
