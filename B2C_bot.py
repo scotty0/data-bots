@@ -124,7 +124,7 @@ while True:
 						'title':'product title',
 						'url':'https://www.company.com/category/product'
 					},
-					'userAgent':"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+					'userAgent':r.choice(user_agent_list)
 				})
 			if r.random() <= .2:
 				tmstmp = tmstmp + d.timedelta(seconds=r.randint(1,600))
@@ -151,7 +151,7 @@ while True:
 						'title':'product title',
 						'url':'https://www.company.com/category/product#add-to-cart'
 					},
-					'userAgent':"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+					'userAgent':r.choice(user_agent_list)
 				})
 				if r.random() <= .6:
 					tmstmp = tmstmp + d.timedelta(seconds=r.randint(1,180))
@@ -178,7 +178,7 @@ while True:
 								'title':'cart',
 								'url':'https://www.company.com/cart'
 							},
-							'userAgent':"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+							'userAgent':r.choice(user_agent_list)
 						})
 					if r.random() <= .8:
 						tmstmp = tmstmp + d.timedelta(seconds=r.randint(1,180))
@@ -205,7 +205,7 @@ while True:
 									'title':'product title',
 									'url':'https://www.company.com/cart#complete'
 								},
-								'userAgent':"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+								'userAgent':r.choice(user_agent_list)
 							})
 
 	
