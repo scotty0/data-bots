@@ -70,8 +70,8 @@ while True:
 		    'city': zip_dict[loc]['city'],
 		    'state': zip_dict[loc]['state'],
 		    'stripe_id':zendesk_id,
-		    'zendesk_id':stripe_id,
-		    'churn_risk':r.choice([True,False,False,False,False,False,False,False,False,False])
+		    'zendesk_id':stripe_id
+		    #'churn_risk':r.choice([True,False,False,False,False,False,False,False,False,False])
 		},timestamp=tmstmp)
 		analytics.group(uid, ''.join(r.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for _ in range(8)), {
   			'company': 'Segment',
